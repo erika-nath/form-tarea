@@ -36,21 +36,22 @@
 
         <div>
             <label for="chocolate">Chocolate</label>
-             <input type="checkbox" name="sabor" value="Chocolate"/>
+             <input type="checkbox" id="sabor" name="sabor" value="Chocolate"/>
         </div>
         <div>
             <label for="tresleches">3 leches</label>
-            <input type="checkbox" name="sabor" value="3 Leches"/>
+            <input type="checkbox" id="sabor" name="sabor" value="3 Leches"/>
         </div>
         <div>
             <label for="fresa">Fresa</label>
-            <input type="checkbox" name="sabor" value="Fresa"/>
+            <input type="checkbox" id="sabor" value="Fresa"/>
         </div>       
          <br>
 
     <label for="tamaño">Tamaño</label>
     <span class="error" id="errorOpc"></span>
-        <select name="opciones" id="option">
+        <select name="opciones" id="option" required>
+            <option value="">Seleccione el tamaño</option>
             <option value="Chico">Chico</option>
             <option value="Mediano">Mediano</option>
             <option value="Grande">Grande</option>
