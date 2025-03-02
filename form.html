@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    crossorigin="anonymous"
+  />
+   <link rel="stylesheet" href="./form.css">
+    <title>Document</title>
+</head>
+<body>  
+    <form id="pedidosForm">
+        <h2>Pedidos de pastel</h2>
+        <div>
+            <label for="cliente">Cliente</label>
+            <input type="text" id="cliente" name="cliente" required>
+
+        </div>
+        <div>
+            <label for="direccion">Direccion</label>
+            <input type="text" id="direccion" name="direccion" required>
+            
+
+        </div>
+        <div>
+            <label for="Dedicatoria">Dedicatoria</label>
+            <input type="text" id="dedicatoria" name="dedicatoria" required>
+        </div>
+        <br>
+        
+        <p>Sabor:</p>
+        <span class="error" id="errorSabor"></span>
+
+        <div>
+            <label for="chocolate">Chocolate</label>
+             <input type="checkbox" name="sabor" value="Chocolate"/>
+        </div>
+        <div>
+            <label for="tresleches">3 leches</label>
+            <input type="checkbox" name="sabor" value="3 Leches"/>
+        </div>
+        <div>
+            <label for="fresa">Fresa</label>
+            <input type="checkbox" name="sabor" value="Fresa"/>
+        </div>       
+         <br>
+
+    <label for="tamaño">Tamaño</label>
+    <span class="error" id="errorOpc"></span>
+        <select name="opciones" id="option">
+            <option value="Chico">Chico</option>
+            <option value="Mediano">Mediano</option>
+            <option value="Grande">Grande</option>
+        </select>
+        <br>
+        <label for="datos">Datos adicionales de pedido:</label>
+        <textarea name="text" cols="20" rows="10" id="text" placeholder="poner lo que desees"></textarea>
+   
+        <br>
+            <button>Enviar</button>
+      
+    </form>
+
+   
+    <script src="form.js"></script>
+</body>
+</html>

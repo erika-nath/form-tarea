@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+#pedidosForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    padding: 10px;
+}
+
+
+h2{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+div i {
+    position: absolute;
+    padding: 9;
+}
+
+
+
+
+input {
+    border: 2px solid gray;
+    padding: 5px;
+    margin: 5px 0;
+    display: block;
+  }
+  
+  input.valido {
+    border-color: green;
+    background-color: #d4ffd4;
+  }
+  
+  input.invalido {
+    border-color: red;
+    background-color: #ffd4d4;
+  }
+
+  .error {
+    color: red;
+
+  }
+  
+  .campo-valido{
+    border-color: green;
+    background-color: aquamarine;
+    font-size: 40rem;
+  }
